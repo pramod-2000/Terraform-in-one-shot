@@ -1,5 +1,4 @@
-
-# PostPilot AI
+# Post Mind AI
 
 <p align="center">
   AI-powered social-media planning, creation, scheduling, and publishing for modern teams.
@@ -24,7 +23,7 @@
 
 ## Overview
 
-PostPilot AI is a production-oriented, multi-workspace social-media operations platform. It enables creators, businesses, and marketing teams to generate content with AI, plan it in a calendar, schedule posts, and publish to multiple social platforms from one dashboard.
+Post Mind AI is a production-oriented, multi-workspace social-media operations platform. It enables creators, businesses, and marketing teams to generate content with AI, plan it in a calendar, schedule posts, and publish to multiple social platforms from one dashboard.
 
 The application keeps posts, media, and connected accounts scoped to a workspace. Scheduled publishing is handled through a cron-triggered API flow backed by PostgreSQL state transitions.
 
@@ -79,9 +78,9 @@ Nginx reverse proxy ───► Next.js / React application container
 
 | Area | Technology |
 | --- | --- |
-| Frontend and API | Next.js 15 App Router, React 19, TypeScript, Tailwind CSS, ShadCN |
+| Frontend and API | Next.js 15 App Router, React 18, TypeScript, Tailwind CSS |
 | Authentication | Firebase Authentication with custom JWT/session flow |
-| Database | PostgreSQL 18 |
+| Database | PostgreSQL 15 |
 | Object storage | AWS S3-compatible storage |
 | AI | OpenAI, Gemini / Google GenAI, Groq, and Hugging Face as configured |
 | Payments | Razorpay |
@@ -161,7 +160,7 @@ Docker Compose defines these services:
 
 | Service | Purpose |
 | --- | --- |
-| `app` | PostPilot AI application, exposed as `3000:3000` |
+| `app` | Post Mind AI application, exposed as `3000:3000` |
 | `postgres` | PostgreSQL 15 database with persistent `postgres_data` volume |
 
 ```bash
@@ -174,7 +173,7 @@ docker compose down
 
 <p>
   <img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?logo=amazonec2&logoColor=white" alt="Amazon EC2">
-  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?logo=amazons3&logoColot 18r=white" alt="Amazon S3">
+  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?logo=amazons3&logoColor=white" alt="Amazon S3">
   <img src="https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white" alt="AWS">
 </p>
 
@@ -201,7 +200,7 @@ Nginx is the recommended host reverse proxy. It forwards requests to the applica
 
 ### Maintenance page preview
 
-![PostPilot AI maintenance page preview](public/images/maintenance-page-preview.png)
+![Post Mind AI maintenance page preview](public/images/maintenance-page-preview.png)
 
 ### Planned maintenance
 
@@ -261,7 +260,7 @@ The GitHub Actions workflow runs on pull requests and pushes to `main`, `pre-pro
 ### Current candidate deployment flow
 
 ```text
-Existing application: port 3000t 18
+Existing application: port 3000
           │
           ▼
 Build a fresh app image on EC2
