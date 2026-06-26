@@ -79,9 +79,9 @@ Nginx reverse proxy ───► Next.js / React application container
 
 | Area | Technology |
 | --- | --- |
-| Frontend and API | Next.js 15 App Router, React 18, TypeScript, Tailwind CSS |
+| Frontend and API | Next.js 15 App Router, React 19, TypeScript, Tailwind CSS, ShadCN |
 | Authentication | Firebase Authentication with custom JWT/session flow |
-| Database | PostgreSQL 15 |
+| Database | PostgreSQL 18 |
 | Object storage | AWS S3-compatible storage |
 | AI | OpenAI, Gemini / Google GenAI, Groq, and Hugging Face as configured |
 | Payments | Razorpay |
@@ -174,7 +174,7 @@ docker compose down
 
 <p>
   <img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?logo=amazonec2&logoColor=white" alt="Amazon EC2">
-  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?logo=amazons3&logoColor=white" alt="Amazon S3">
+  <img src="https://img.shields.io/badge/Amazon%20S3-569A31?logo=amazons3&logoColot 18r=white" alt="Amazon S3">
   <img src="https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white" alt="AWS">
 </p>
 
@@ -261,7 +261,7 @@ The GitHub Actions workflow runs on pull requests and pushes to `main`, `pre-pro
 ### Current candidate deployment flow
 
 ```text
-Existing application: port 3000
+Existing application: port 3000t 18
           │
           ▼
 Build a fresh app image on EC2
