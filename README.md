@@ -78,7 +78,7 @@ Nginx reverse proxy ───► Next.js / React application container
 
 | Area | Technology |
 | --- | --- |
-| Frontend and API | Next.js 15 App Router, React 18, TypeScript, Tailwind CSS |
+| Frontend and API | Next.js 15 App Router, React 18, TypeScript, Tailwind CSS ,ShadCN|
 | Authentication | Firebase Authentication with custom JWT/session flow |
 | Database | PostgreSQL 15 |
 | Object storage | AWS S3-compatible storage |
